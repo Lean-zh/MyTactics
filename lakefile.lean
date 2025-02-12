@@ -14,3 +14,14 @@ require mathlib from git
 @[default_target]
 lean_lib «MyTactics» where
   -- add any library configuration options here
+
+@[default_target]
+lean_lib «Hello» where
+
+@[default_target]
+lean_exe "hello" where
+  root := `Hello.Greet
+
+@[default_target]
+lean_exe "demo" where
+  root := `Demo
