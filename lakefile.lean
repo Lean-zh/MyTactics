@@ -8,7 +8,8 @@ package "MyTactics" where
   ]
   -- add any additional package configuration options here
 
-require "leanprover-community" / "mathlib"
+require mathlib from git
+  "https://github.com/leanprover-community/mathlib4.git" @ s!"v{Lean.versionString}"
 
 @[default_target]
 lean_lib «MyTactics» where
