@@ -25,3 +25,8 @@ lean_exe "hello" where
 @[default_target]
 lean_exe "demo" where
   root := `Demo
+
+@[test_driver]
+lean_exe test {
+  root := `Tests.Main
+}
